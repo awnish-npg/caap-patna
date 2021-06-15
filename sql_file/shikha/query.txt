@@ -1,0 +1,13 @@
+UPDATE `emailtemplates` SET `subject` = 'You are added as {user_type} member', `message` = 'Hi {staff_firstname}<br /><br /> You are added as an {user_type} on our {companyname}.<br /><br />Please use the following login credentials:<br /><br /><strong>Email:</strong> {staff_email}<br /><strong>Password:</strong> {password}<br /><br />Click <a href=\"{admin_url}\">here </a>to login in the dashboard.<br /><br />Best Regards,<br />{companyname} Team' WHERE `emailtemplates`.`emailtemplateid` = 40;
+
+************(10-07-2020) **************
+
+ALTER TABLE `area` CHANGE `email` `file` VARCHAR(150) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL
+
+*****(7-08-2020)******
+
+
+INSERT INTO `project_status` (`id`, `color`, `bg-color`, `name`, `order`, `filter_default`) VALUES (NULL, '#ff7d00', '#ffead6', 'Escalated', '7', '1');
+INSERT INTO `project_status` (`id`, `color`, `bg-color`, `name`, `order`, `filter_default`) VALUES ('8', '#ff7d00', '#ffead6', 'Frozen', '8', '1');
+INSERT INTO `project_status` (`id`, `color`, `bg-color`, `name`, `order`, `filter_default`) VALUES (NULL, '#ff7d00', '#ffead6', 'Unassigned', '8', '1');
+ALTER TABLE `area` ADD `logo` VARCHAR(150) NULL AFTER `file`;

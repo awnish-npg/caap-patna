@@ -1,0 +1,103 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+    color: #224087;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+th,
+td {
+    padding: 8px 5px;
+    text-align: center;
+    border: 1px solid #000;
+    font-size: 14px;
+}
+
+th,
+td,
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+td {
+    padding: 0px 10px 5px;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+
+.header {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd
+}
+
+.header td,
+.no-bdr td {
+    border: none;
+}
+
+.header td {
+    padding-bottom: 15px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.date,
+.generated {
+    font-size: 13px;
+    display: block;
+}
+
+.region td {
+    background: #ddd;
+    font-weight: bold;
+}
+
+.subregion td {
+    font-size: 13px;
+}
+
+.subregion td:first-child {
+    padding-left: 20px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+}
+
+.mB5 {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,77 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+@page{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+h1{font-size: 20px; color: #224087; margin-bottom: 10px; margin-top: 5px;}
+h2{font-size: 18px; text-align: center; margin-top: 10px; margin-bottom: 5px;}
+h3{font-size: 16px; margin-top: 15px; margin-bottom: 5px;}
+.mB15{margin-bottom: 15px;}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0;
+}
+
+
+th,td {
+            padding: 5px 5px 10px;
+            text-align: left;
+            border: 1px solid #000;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 13px;
+        }
+        td{
+            padding: 0px 10px 5px;
+        }
+p{margin-bottom: 5px;}
+p,span{
+    font-family: 'Open Sans', sans-serif;
+}
+td label, td span{margin: 0; padding: 0; }
+td.wip{color: #f5b500 !important;}
+.pL20{padding-left: 20px !important;}
+.m-0{margin: 0 !important;}
+.font-size-11{font-size: 11px !important;}
+.pB10{padding-bottom: 10px;}
+.d-block{display: block;}
+.header td{border: 0;}
+.header {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd
+}
+
+.header td,
+.no-bdr td {
+    border: none;
+}
+
+.header td {
+    padding-bottom: 15px;
+
+}
+
+.text-left{text-align: left;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.semibold{font-weight: 600;}
+.activity-feed .feed-item{border-left: 0 !important; margin-bottom: 15px;}
+.activity-feed .feed-item:after{ display: none;}
+.activity-feed .feed-item .text p{font-size: 13px;}
+.lightgallery{text-align: center;}
+.lightgallery figure{ width: 130px; /*margin: auto;*/}
+.lightgallery figure img{height: 100% !important;width: 100% !important;object-fit: scale-down;border-radius: 8px !important;}
+.feed-item .date .text-has-action {border-bottom: none;font-weight: 700;color: #000;font-size: 11px;}
+.activity-feed .feed-item .feed-container {background-color: #f3f3f3;padding:20px 15px 15px;border-radius: 8px; margin-bottom: 20px;}
+.text-warning {color: #ff6f00; font-size: 13px;}
+.no-doc{display: block; margin-top: -10px;}
+.frozen{color: #c96118 !important;}
+.footer { position: fixed; bottom: 15px; left: 0px; right: 0px; font-size: 12px;}
+.generated {
+    font-size: 13px;
+    display: block;
+}

@@ -1,0 +1,25 @@
+
+application/cache/*
+!application/cache/index.html
+
+application/logs/*
+!application/logs/index.html
+
+# application/config/app-config.php
+
+application/*/.htaccess
+
+# -- ignoring the environment variable
+/.env.development
+
+.htaccess
+.env-Copy.development
+/.env.development
+/.env-Copy.development
+/.env.development
+/.env.development
+/.env.development
+/.env.development
+
+# ignoring uploads
+/uploads

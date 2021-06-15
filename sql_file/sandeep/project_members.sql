@@ -1,0 +1,11 @@
+INSERT INTO `project_members` (`id`, `project_id`, `staff_id`) VALUES (1, 1, 2);
+INSERT INTO `project_members` (`id`, `project_id`, `staff_id`) VALUES (2, 1, 1);
+INSERT INTO `project_members` (`id`, `project_id`, `staff_id`) VALUES (3, 2, 1);
+INSERT INTO `project_members` (`id`, `project_id`, `staff_id`) VALUES (4, 3, 2);
+INSERT INTO `project_members` (`id`, `project_id`, `staff_id`) VALUES (5, 4, 2);
+INSERT INTO `project_members` (`id`, `project_id`, `staff_id`) VALUES (6, 5, 2);
+INSERT INTO `project_members` (`id`, `project_id`, `staff_id`) VALUES (7, 6, 2);
+INSERT INTO `project_members` (`id`, `project_id`, `staff_id`) VALUES (8, 7, 2);
+INSERT INTO `project_members` (`id`, `project_id`, `staff_id`) VALUES (9, 8, 2);
+INSERT INTO `project_members` (`id`, `project_id`, `staff_id`) VALUES (10, 9, 2);
+INSERT INTO `project_members` (`id`, `project_id`, `staff_id`) VALUES (11, 10, 2);

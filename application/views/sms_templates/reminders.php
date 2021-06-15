@@ -1,0 +1,1 @@
+This is the <?php echo $number; ?> reminder for project ID <?php echo $project_id; ?> due on <?php echo $due_date; ?>. Please log into the Clean Air Project Dashboard at <?php echo admin_url('authentication'); ?> to resolve it.
