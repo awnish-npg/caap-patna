@@ -987,7 +987,7 @@ class Tickets extends AdminController
                     //Send Email Notification
                     $this->projects_model->sendAssignEmailNotification($projectId, $staffId,'New_ticket');
                     // sms part
-                    $this->sendSms($projectId,$staffId,'assigned');
+                    // $this->sendSms($projectId,$staffId,'assigned');
                     // smspart
 
                     echo json_encode([
@@ -1224,7 +1224,7 @@ class Tickets extends AdminController
                     //Send Email Notification
                     $this->projects_model->sendReopenMailToAllMember($projectId,$reopenReason);
 // sms integration
-                    $this->sendSms($projectId,$assignedUser,'reopened');
+                    // $this->sendSms($projectId,$assignedUser,'reopened');
 // 
                     echo json_encode([
                         'success' => TRUE,

@@ -846,7 +846,7 @@ class Cron_model extends App_Model
                     //if($task['rel_id'] == 309){
                       send_mail_template('task_deadline_reminder_to_staff', $member['email'], $member['staff_id'], $task['id']);
                     // sms integration
-                    $this->sendSms($member['staff_id'],$task['rel_id'],$email_data['reminder_count']);  
+                    // $this->sendSms($member['staff_id'],$task['rel_id'],$email_data['reminder_count']);  
                     // sms integration end
                         $this->db->where('id', $task['id']);
                         $this->db->update(db_prefix() . 'tasks', $notify_update);

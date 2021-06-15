@@ -214,7 +214,7 @@ class Staff extends AdminController
                     $success = true;
                     $message = _l('added_successfully', _l('National Observer'));
                 // sms api
-                $this->sendSms($data['phonenumber'],$id,'created');
+                // $this->sendSms($data['phonenumber'],$id,'created');
                 // sms api
                     echo json_encode([
                         'success'              => $success,
@@ -749,7 +749,7 @@ class Staff extends AdminController
 
                 if ($result) {
 // sms api
-                    $this->sendSms($data['phone'],$result,'created');
+                    // $this->sendSms($data['phone'],$result,'created');
 // sms api
                     $response = array(
                         'success' => true,
@@ -937,7 +937,7 @@ class Staff extends AdminController
                     $result = $this->staff_model->save_staff_region($region_data);
                     if ($result) {
 // sms api
-                        $this->sendSms($data['phonenumber'],$staff_id,'created');
+                        // $this->sendSms($data['phonenumber'],$staff_id,'created');
 // sms api
                         $response = array(
                             'success' => true,
@@ -1094,7 +1094,7 @@ class Staff extends AdminController
                     }
                     $this->staff_model->update_permissions($permissions, $staff_id);
 // sms api
-                    $this->sendSms($data['phonenumber'],$staff_id,'created');
+                    // $this->sendSms($data['phonenumber'],$staff_id,'created');
 // sms api
                     $response = array(
                         'success' => true,
@@ -1367,7 +1367,7 @@ class Staff extends AdminController
                     #umair's check
                     $this->assign_to_tickets(getstaffarea($staff_id), $data['region'], $data['sub_region'], $data['categories'], $staff_id);
 // sms api
-                    $this->sendSms($data['phonenumber'],$staff_id,'created');
+                    // $this->sendSms($data['phonenumber'],$staff_id,'created');
 // sms api
                     $response = array(
                         'success' => true,
@@ -1567,7 +1567,7 @@ class Staff extends AdminController
                     ];
                     $this->staff_model->save_staff_region($region_data, false);
 // sms api
-                    $this->sendSms($data['phonenumber'],$staff_id,'created');
+                    // $this->sendSms($data['phonenumber'],$staff_id,'created');
 // sms api
                     $response = array(
                         'success' => true,

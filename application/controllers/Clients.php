@@ -824,8 +824,8 @@ class Clients extends ClientsController
     public function open_ticket()
     {   
         // 
-        $ch  =  curl_init();
-        $timeout  =  30; 
+        // $ch  =  curl_init();
+        // $timeout  =  30; 
         // 
         if (!has_contact_permission('support')) {
             set_alert('warning', _l('access_denied'));
@@ -994,16 +994,16 @@ class Clients extends ClientsController
                 //         $response = curl_exec($ch) ;
                 //         curl_close($ch) ; 
                 //     }
-                    if(!empty($phone_number_sa)){
-                        $message=$this->load->view('sms_templates/unassigned_project',[],true);
-                        $url=SMS_API_URL.'&number='.$phone_number_sa.'&text='.urlencode($message).'&route=05';
-                        curl_setopt ($ch,CURLOPT_URL, $url);
-                        curl_setopt ($ch,CURLOPT_RETURNTRANSFER, 1);
-                        curl_setopt ($ch, CURLOPT_SSL_CIPHER_LIST, 'DEFAULT@SECLEVEL=1');
-                        curl_setopt ($ch,CURLOPT_CONNECTTIMEOUT, $timeout) ;
-                        $response = curl_exec($ch) ;
-                        curl_close($ch) ; 
-                    }
+                    // if(!empty($phone_number_sa)){
+                    //     $message=$this->load->view('sms_templates/unassigned_project',[],true);
+                    //     $url=SMS_API_URL.'&number='.$phone_number_sa.'&text='.urlencode($message).'&route=05';
+                    //     curl_setopt ($ch,CURLOPT_URL, $url);
+                    //     curl_setopt ($ch,CURLOPT_RETURNTRANSFER, 1);
+                    //     curl_setopt ($ch, CURLOPT_SSL_CIPHER_LIST, 'DEFAULT@SECLEVEL=1');
+                    //     curl_setopt ($ch,CURLOPT_CONNECTTIMEOUT, $timeout) ;
+                    //     $response = curl_exec($ch) ;
+                    //     curl_close($ch) ; 
+                    // }
                 // phone
                    $area=getitemname($data['area'],'area');
                    $region=getitemname($data['region'],'region');

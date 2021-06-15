@@ -78,7 +78,7 @@
     'normal' => $fontDir . '/DejaVuSerif',
   ),
   'open sans' => array(
-    'normal' => $fontDir . '/open-sans-normal_6f865f9364b47803d0ca0685740ee350',
+    'normal' => $fontDir . '/open-sans-normal_98b4af7c31a8844ad845b521b340abe8',
   ),
   'glyphicons halflings' => array(
     'normal' => $fontDir . '/glyphicons-halflings-normal_6ef08a2b2a628677231120c90d869b74',

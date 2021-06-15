@@ -185,16 +185,16 @@ public function registerccr()
                     hooks()->do_action('after_client_register_logged_in', $clientid);
                     set_alert('success', _l('clients_successfully_registered'));
                     // 
-                    $ch  =  curl_init();
-                    $timeout  =  30; 
-                    $message=$this->load->view('sms_templates/onboard',[],true);
-                    $url=SMS_API_URL.'&number='.$data['contact_phonenumber'].'&text='.urlencode($message).'&route=05';
-                    curl_setopt ($ch,CURLOPT_URL, $url);
-                    curl_setopt ($ch,CURLOPT_RETURNTRANSFER, 1);
-                    curl_setopt ($ch, CURLOPT_SSL_CIPHER_LIST, 'DEFAULT@SECLEVEL=1');
-                    curl_setopt ($ch,CURLOPT_CONNECTTIMEOUT, $timeout) ;
-                    $response = curl_exec($ch) ;
-                    curl_close($ch) ;
+                    // $ch  =  curl_init();
+                    // $timeout  =  30; 
+                    // $message=$this->load->view('sms_templates/onboard',[],true);
+                    // $url=SMS_API_URL.'&number='.$data['contact_phonenumber'].'&text='.urlencode($message).'&route=05';
+                    // curl_setopt ($ch,CURLOPT_URL, $url);
+                    // curl_setopt ($ch,CURLOPT_RETURNTRANSFER, 1);
+                    // curl_setopt ($ch, CURLOPT_SSL_CIPHER_LIST, 'DEFAULT@SECLEVEL=1');
+                    // curl_setopt ($ch,CURLOPT_CONNECTTIMEOUT, $timeout) ;
+                    // $response = curl_exec($ch) ;
+                    // curl_close($ch) ;
                     //                     
                 } else {
                     set_alert('warning', _l('clients_account_created_but_not_logged_in'));
@@ -344,16 +344,16 @@ public function valid_password($password)
                         hooks()->do_action('after_client_register_logged_in', $clientid);
                         set_alert('success', _l('clients_successfully_registered'));
                         // 
-                        $ch  =  curl_init();
-                        $timeout  =  30; 
-                        $message=$this->load->view('sms_templates/onboard',[],true);
-                        $url=SMS_API_URL.'&number='.$data['contact_phonenumber'].'&text='.urlencode($message).'&route=05';
-                        curl_setopt ($ch,CURLOPT_URL, $url);
-                        curl_setopt ($ch,CURLOPT_RETURNTRANSFER, 1);
-                        curl_setopt ($ch, CURLOPT_SSL_CIPHER_LIST, 'DEFAULT@SECLEVEL=1');
-                        curl_setopt ($ch,CURLOPT_CONNECTTIMEOUT, $timeout) ;
-                        $response = curl_exec($ch) ;
-                        curl_close($ch);
+                        // $ch  =  curl_init();
+                        // $timeout  =  30; 
+                        // $message=$this->load->view('sms_templates/onboard',[],true);
+                        // $url=SMS_API_URL.'&number='.$data['contact_phonenumber'].'&text='.urlencode($message).'&route=05';
+                        // curl_setopt ($ch,CURLOPT_URL, $url);
+                        // curl_setopt ($ch,CURLOPT_RETURNTRANSFER, 1);
+                        // curl_setopt ($ch, CURLOPT_SSL_CIPHER_LIST, 'DEFAULT@SECLEVEL=1');
+                        // curl_setopt ($ch,CURLOPT_CONNECTTIMEOUT, $timeout) ;
+                        // $response = curl_exec($ch) ;
+                        // curl_close($ch);
                         // 
                     } else {
                         set_alert('warning', _l('clients_account_created_but_not_logged_in'));

@@ -127,7 +127,7 @@ class Projects_model extends App_Model
                     $pid['deadline']
                 );
                 // sms integratiom
-                $this->sendSms($project_id,$staffid,'assigned');
+                // $this->sendSms($project_id,$staffid,'assigned');
                 // sms integration end
             }
         }
