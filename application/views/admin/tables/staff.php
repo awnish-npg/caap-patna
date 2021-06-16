@@ -48,7 +48,7 @@ foreach ($rResult as $aRow) {
             $aRow['slug_url'] = trim("'" . $aRow['slug_url'] . "'");
 
             $_data = '<div class="onoffswitch">
-                        <input type="checkbox" onclick="changeStatus(this,' . $aRow['staffid'] . ',' . $aRow['area'] . ',' . $aRow['slug_url'] . ')" class="onoffswitch-checkbox" id="c_' . $aRow['staffid'] . '" data-id="' . $aRow['staffid'] . '" data-status="' . $aRow['staff.active'] . '" ' . $checked . '>
+                        <input type="checkbox" onclick="changeStatus(this,' . $aRow['staffid'] . ',' .( $aRow['area'] ?$aRow['area']:0) . ',' . $aRow['slug_url'] . ')" class="onoffswitch-checkbox" id="c_' . $aRow['staffid'] . '" data-id="' . $aRow['staffid'] . '" data-status="' . $aRow['staff.active'] . '" ' . $checked . '>
                         <label class="onoffswitch-label" for="c_' . $aRow['staffid'] . '"></label>
                     </div>';
 

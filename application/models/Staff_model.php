@@ -304,7 +304,9 @@ class Staff_model extends App_Model
      */
     public function get($id = '', $where = [])
     {
-        $select_str = '*,CONCAT(firstname," ",lastname) as full_name';
+        // $select_str = '*,CONCAT(firstname," ",lastname) as full_name';
+        $select_str = '*,CONCAT(firstname," ","") as full_name';
+
 
         // Used to prevent multiple queries on logged in staff to check the total unread notifications in core/AdminController.php
         if (is_staff_logged_in() && $id != '' && $id == get_staff_user_id()) {
@@ -985,7 +987,7 @@ class Staff_model extends App_Model
 
     public function get_action_taker($data)
     {
-        $this->db->select('s.firstname as name,CONCAT(s.firstname," ",s.lastname) as full_name, s.staffid, s.organisation,s.role');
+        $this->db->select('s.firstname as name,CONCAT(s.firstname," ","") as full_name, s.staffid, s.organisation,s.role');
         $this->db->from('roles r');
         $this->db->join('staff s', 's.role = r.roleid AND r.slug_url = "at" AND s.area = ' . $data['area_id']);
         if (!empty($data['region']) && !empty($data['sub_region'])) {
@@ -1024,7 +1026,7 @@ class Staff_model extends App_Model
 
     public function get_ata($id)
     {
-        $select_str = 's.staffid,s.firstname,s.email,s.organisation,s.phonenumber,CONCAT(firstname," ",lastname) as full_name,sa.assistant_id,sr.region,sr.sub_region';
+        $select_str = 's.staffid,s.firstname,s.email,s.organisation,s.phonenumber,CONCAT(firstname," ","") as full_name,sa.assistant_id,sr.region,sr.sub_region';
 
         $this->db->select($select_str);
         $this->db->from('staff s');
@@ -1067,7 +1069,7 @@ class Staff_model extends App_Model
 
     public function get_staff_assistance($id)
     {
-        $select_str = 's.staffid,s.firstname,s.email,s.organisation,s.phonenumber,CONCAT(firstname," ",lastname) as full_name,sa.assistant_id,sr.region,sr.sub_region';
+        $select_str = 's.staffid,s.firstname,s.email,s.organisation,s.phonenumber,CONCAT(firstname," ","") as full_name,sa.assistant_id,sr.region,sr.sub_region';
 
         $this->db->select($select_str);
         $this->db->from('staff_assistance sa');
@@ -1080,7 +1082,7 @@ class Staff_model extends App_Model
 
     public function get_userDetails($staffid)
     {
-        $select_str = 's.staffid,s.firstname,s.email,s.organisation,s.phonenumber,CONCAT(firstname," ",lastname) as full_name,s.area,GROUP_CONCAT(sr.region) as region ,GROUP_CONCAT(sr.sub_region) as sub_region,s.role,r.name as role_name';
+        $select_str = 's.staffid,s.firstname,s.email,s.organisation,s.phonenumber,CONCAT(firstname," ","") as full_name,s.area,GROUP_CONCAT(sr.region) as region ,GROUP_CONCAT(sr.sub_region) as sub_region,s.role,r.name as role_name';
 
         $this->db->select($select_str);
         $this->db->from('staff s');
@@ -1094,7 +1096,7 @@ class Staff_model extends App_Model
 
     public function get_reporting_person($id)
     {
-        $select_str = 's.staffid,s.firstname,s.email,s.organisation,s.phonenumber,CONCAT(firstname," ",lastname) as full_name,sa.assistant_id,sr.region,sr.sub_region';
+        $select_str = 's.staffid,s.firstname,s.email,s.organisation,s.phonenumber,CONCAT(firstname," ","") as full_name,sa.assistant_id,sr.region,sr.sub_region';
 
         $this->db->select($select_str);
         $this->db->from('staff s');
