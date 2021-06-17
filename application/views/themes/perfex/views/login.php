@@ -11,7 +11,7 @@
                     <div class="row">
                         <div class="col-lg-5 col-md-5 col-sm-12">
                         <div class="mobile-logo">
-                                    <img src="<?php echo base_url('assets/images/mobile-logo.png') ?>" alt="">
+                                    <img src="<?php echo base_url('assets/images/caap-patna-mob.jpg') ?>" alt="">
                                     <h3><?php echo get_option('companyname');?></h3>
                                 </div>
                             <div class="login-form">
@@ -55,7 +55,7 @@
                         <?php echo form_close(); ?>
                         <div class="col-lg-7 col-md-7 col-sm-7 d-sm-none">
                             <div class="login-logo">
-                                <img src="<?php echo base_url('assets/images/cpcb-logo.png') ?>" alt="">
+                                <img src="<?php echo base_url('assets/images/caap-patna.jpg') ?>" alt="">
                                 <h3><?php echo get_option('companyname'); ?></h3>
                                 <p><?php echo _l("company_name_tagline"); ?></p>
                             </div>
