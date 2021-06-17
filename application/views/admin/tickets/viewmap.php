@@ -3,7 +3,7 @@
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeh5YWpTqh9r5t9ebKayFWyrthTXsEuVY&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
 
     </script>
 <style>
