@@ -38,7 +38,12 @@
                 <p class="or">OR</p>
                 <div class="col-lg-2"></div>
                 <div class="col-lg-5">
-                    <label>Reject Project</label>
+                    <label><?php if($GLOBALS['current_user']->role_slug_url =='at') { 
+                        echo "Refer Project"; 
+                    }else{
+                        echo "Reject Project";
+                    }?>
+                    </label>
                     <div class="form-select-field mB15">
                         <select class="rejectTDList">
                             <?php echo $exceptionList; ?>
@@ -50,7 +55,13 @@
                         <label for="other-area" title="Reason" data-title="Reason"></label>
                     </div>
                     <div class="">
-                        <a href="#" class="btn reject-btn pull-right rejectTDTicket" data-ticketdetail="ticketDetail">Reject</a>
+                        <a href="#" class="btn reject-btn pull-right rejectTDTicket" data-ticketdetail="ticketDetail">
+                        <?php if($GLOBALS['current_user']->role_slug_url =='at') { 
+                        echo "Refer"; 
+                        }else{
+                            echo "Reject";
+                        }?>
+                        </a>
                     </div>
                 </div>
                 <input type="hidden" name="rejectProjectId" class="rejectProjectId" value="<?php echo $project_id; ?>" />

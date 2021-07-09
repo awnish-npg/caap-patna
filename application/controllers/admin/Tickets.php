@@ -1054,7 +1054,7 @@ class Tickets extends AdminController
             if ($updateTicket) {
                 echo json_encode([
                     'success' => TRUE,
-                    'message' => 'Project rejected successfully',
+                    'message' => 'Project '. ($GLOBALS['current_user']->role_slug_url =='at'? 'referred':'reject').' successfully',
                 ]);
             } else {
                 echo json_encode([
