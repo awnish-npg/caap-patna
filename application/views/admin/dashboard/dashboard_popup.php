@@ -94,7 +94,11 @@ if (!empty($exceptionDetails))
                     <div class="modal-header p-0">
                         <div class="panel panel-default sub-ticket-panel mB0 border-0">
                             <div class="panel-heading reject">
-                                Reject Project
+                            <?php if($GLOBALS['current_user']->role_slug_url =='at') { 
+                                    echo "Refer Project"; 
+                                }else{
+                                    echo "Reject Project";
+                                }?>
                             </div>
                         </div>
                     </div>
@@ -111,7 +115,13 @@ if (!empty($exceptionDetails))
                     </div>
                     <div class="modal-footer">
                         <div class="btn-container">
-                            <button type="button" class="btn-custom rejectTicket">Reject</button>
+                            <button type="button" class="btn-custom rejectTicket">
+                            <?php if($GLOBALS['current_user']->role_slug_url =='at') { 
+                                    echo "Refer"; 
+                                }else{
+                                    echo "Reject";
+                                }?>
+                            </button>
                             <button type="submit" class="btn btn-cancel" data-dismiss="modal">Cancel</button>
                         </div>
                         </div>

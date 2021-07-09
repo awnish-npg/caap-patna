@@ -286,7 +286,9 @@ class Dashboard extends AdminController
                                             <a href="javascript:void(0)" class="btn accept-btn accept-btn-popup" data-projectid="' . $projectId . '">Accept</a>
                                         </div>
                                         <div class="btn-container">
-                                            <a href="javascript:void(0)" class="btn reject-btn reject-btn-popup" data-projectid="' . $projectId . '">Reject</a>
+                                            <a href="javascript:void(0)" class="btn reject-btn reject-btn-popup" data-projectid="' . $projectId . '">'.
+                                             ($GLOBALS['current_user']->role_slug_url =='at'? 'Refer':'Reject')
+                                            .'</a>
                                         </div>';
                         } else {
                             $action = 'New Project';

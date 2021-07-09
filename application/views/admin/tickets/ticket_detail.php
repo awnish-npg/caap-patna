@@ -37,7 +37,7 @@ if ($projectStatus == 5) {
                 if ($projectStatus == 1 || ($projectStatus == 4 && $milestoneStatus == 4)) {
                     $actionLabel = '';
                     if ($projectStatus == 1) {
-                        $actionLabel = ' - Accept or Reject';
+                        $actionLabel = ' - Accept or Refer';
                     } else if ($projectStatus == 4 && $milestoneStatus == 4) {
                         $actionLabel = ' - Close/Reopen Project';
                     }
